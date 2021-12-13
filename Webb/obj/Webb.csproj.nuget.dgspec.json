@@ -322,6 +322,10 @@
               "target": "Package",
               "version": "[2.0.1, )"
             },
+            "BundlerMinifier.Core": {
+              "target": "Package",
+              "version": "[3.2.449, )"
+            },
             "EPPlus.Core": {
               "target": "Package",
               "version": "[1.5.4, )"

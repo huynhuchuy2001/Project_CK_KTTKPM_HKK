@@ -26,3 +26,13 @@ F:\TaiLieu\HUYNHDUCHUY-PC\HKI_Nam3\KTTKPM\Project_CK_KTTKPM\ASC.Models\obj\Debug
 F:\TaiLieu\HUYNHDUCHUY-PC\HKI_Nam3\KTTKPM\Project_CK_KTTKPM\ASC.Models\obj\Debug\netcoreapp3.1\ASC.Models.csproj.CoreCompileInputs.cache
 F:\TaiLieu\HUYNHDUCHUY-PC\HKI_Nam3\KTTKPM\Project_CK_KTTKPM\ASC.Models\obj\Debug\netcoreapp3.1\ASC.Models.dll
 F:\TaiLieu\HUYNHDUCHUY-PC\HKI_Nam3\KTTKPM\Project_CK_KTTKPM\ASC.Models\obj\Debug\netcoreapp3.1\ASC.Models.pdb
+F:\TaiLieu\HUYNHDUCHUY-PC\HKI_Nam3\KTTKPM\Project_CK_PTTKPM_HKK\ASC.Models\bin\Debug\netcoreapp3.1\ASC.Models.deps.json
+F:\TaiLieu\HUYNHDUCHUY-PC\HKI_Nam3\KTTKPM\Project_CK_PTTKPM_HKK\ASC.Models\bin\Debug\netcoreapp3.1\ASC.Models.dll
+F:\TaiLieu\HUYNHDUCHUY-PC\HKI_Nam3\KTTKPM\Project_CK_PTTKPM_HKK\ASC.Models\bin\Debug\netcoreapp3.1\ASC.Models.pdb
+F:\TaiLieu\HUYNHDUCHUY-PC\HKI_Nam3\KTTKPM\Project_CK_PTTKPM_HKK\ASC.Models\obj\Debug\netcoreapp3.1\ASC.Models.csproj.AssemblyReference.cache
+F:\TaiLieu\HUYNHDUCHUY-PC\HKI_Nam3\KTTKPM\Project_CK_PTTKPM_HKK\ASC.Models\obj\Debug\netcoreapp3.1\ASC.Models.GeneratedMSBuildEditorConfig.editorconfig
+F:\TaiLieu\HUYNHDUCHUY-PC\HKI_Nam3\KTTKPM\Project_CK_PTTKPM_HKK\ASC.Models\obj\Debug\netcoreapp3.1\ASC.Models.AssemblyInfoInputs.cache
+F:\TaiLieu\HUYNHDUCHUY-PC\HKI_Nam3\KTTKPM\Project_CK_PTTKPM_HKK\ASC.Models\obj\Debug\netcoreapp3.1\ASC.Models.AssemblyInfo.cs
+F:\TaiLieu\HUYNHDUCHUY-PC\HKI_Nam3\KTTKPM\Project_CK_PTTKPM_HKK\ASC.Models\obj\Debug\netcoreapp3.1\ASC.Models.csproj.CoreCompileInputs.cache
+F:\TaiLieu\HUYNHDUCHUY-PC\HKI_Nam3\KTTKPM\Project_CK_PTTKPM_HKK\ASC.Models\obj\Debug\netcoreapp3.1\ASC.Models.dll
+F:\TaiLieu\HUYNHDUCHUY-PC\HKI_Nam3\KTTKPM\Project_CK_PTTKPM_HKK\ASC.Models\obj\Debug\netcoreapp3.1\ASC.Models.pdb

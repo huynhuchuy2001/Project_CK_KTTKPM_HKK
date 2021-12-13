@@ -40,7 +40,7 @@ namespace Webb.Areas.ServiceRequests.Controllers
         {
             var masterData = await _masterData.GetMasterDataCacheAsync();
             ViewBag.VehicleTypes = masterData.Values.Where(p => p.PartitionKey == MasterKeys.VehicleType.ToString()).ToList();
-            ViewBag.VehicleNames = masterData.Values.Where(p => p.PartitionKey == MasterKeys.VehicleManufacturer.ToString()).ToList();
+            ViewBag.VehicleNames = masterData.Values.Where(p => p.PartitionKey == MasterKeys.VehicleName.ToString()).ToList();
             return View(new NewServiceRequestViewModel());
         }
         [HttpPost]
@@ -50,7 +50,7 @@ namespace Webb.Areas.ServiceRequests.Controllers
             {
                 var masterData = await _masterData.GetMasterDataCacheAsync();
                 ViewBag.VehicleTypes = masterData.Values.Where(p => p.PartitionKey == MasterKeys.VehicleType.ToString()).ToList();
-                ViewBag.VehicleNames = masterData.Values.Where(p => p.PartitionKey == MasterKeys.VehicleManufacturer.ToString()).ToList();
+                ViewBag.VehicleNames = masterData.Values.Where(p => p.PartitionKey == MasterKeys.VehicleName.ToString()).ToList();
                 return View(request);
             }
             // Map the view model to Azure model
@@ -86,7 +86,7 @@ namespace Webb.Areas.ServiceRequests.Controllers
             // Select List Data
             var masterData = await _masterData.GetMasterDataCacheAsync();
             ViewBag.VehicleTypes = masterData.Values.Where(p => p.PartitionKey == MasterKeys.VehicleType.ToString()).ToList();
-            ViewBag.VehicleNames = masterData.Values.Where(p => p.PartitionKey == MasterKeys.VehicleManufacturer.ToString()).ToList();
+            ViewBag.VehicleNames = masterData.Values.Where(p => p.PartitionKey == MasterKeys.VehicleName.ToString()).ToList();
             ViewBag.Status = Enum.GetValues(typeof(Status)).Cast<Status>().Select(v => v.ToString()).ToList();
             ViewBag.ServiceEngineers = await _userManager.GetUsersInRoleAsync(Roles.Engineer.ToString());
             return View(new ServiceRequestDetailViewModel

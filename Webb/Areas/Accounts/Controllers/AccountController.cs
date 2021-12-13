@@ -40,18 +40,19 @@ namespace Webb.Areas.Accounts.Controllers
                 Registration = new ServiceEngineerRegistrationViewModel() { IsEdit = false }
             });
         }
-         [HttpGet]
-        public async Task<IActionResult> ServiceUsers()
-        {
-            var serviceUsers = await _userManager.GetUsersInRoleAsync(Roles.Engineer.ToString());
-            // Hold all service engineers in session
-            HttpContext.Session.SetSession("ServiceUsers", serviceUsers);
-            return View(new ServiceEngineerViewModel
-            {
-                ServiceEngineers = serviceUsers == null ? null : serviceUsers.ToList(),
-                Registration = new ServiceEngineerRegistrationViewModel() { IsEdit = false }
-            });
-        }
+        //[Authorize(Roles = "Admin")]
+        //[HttpGet]
+        //public async Task<IActionResult> ServiceUsers()
+        //{
+        //    var serviceUsers = await _userManager.GetUsersInRoleAsync(Roles.User.ToString());
+        //    // Hold all service engineers in session
+        //    HttpContext.Session.SetSession("ServiceUsers", serviceUsers);
+        //    return View(new ServiceUserViewModel
+        //    {
+        //        Customers = serviceUsers == null ? null : serviceUsers.ToList(),
+        //        Registration = new ServiceUsersRegistrationViewModel() { IsEdit = false }
+        //    });
+        //}
         //[Authorize(Roles = "Admin")]
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -179,13 +180,11 @@ namespace Webb.Areas.Accounts.Controllers
             {
                 Customers = customers == null ? null : customers.ToList(),
                 Registration = new ServiceUsersRegistrationViewModel()
-                {
-                    IsEdit = false
-                }
             }) ;
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
+        //[Authorize(Roles = "Admin")]
         public async Task<IActionResult> Customers(ServiceUserViewModel customer)
         {
             customer.Customers = HttpContext.Session.GetSession<List<ApplicationUser>>("Customers");
@@ -204,8 +203,7 @@ namespace Webb.Areas.Accounts.Controllers
                (user, new System.Security.Claims.Claim(isActiveClaim.Type,isActiveClaim.Value));
                var addClaimResult = await _userManager.AddClaimAsync(user,
                new System.Security.Claims.Claim(isActiveClaim.Type,customer.Registration.IsActive.ToString()));
-            } 
-
+            }
             if (customer.Registration.IsActive)
             {
                 await _emailSender.SendEmailAsync(customer.Registration.Email,

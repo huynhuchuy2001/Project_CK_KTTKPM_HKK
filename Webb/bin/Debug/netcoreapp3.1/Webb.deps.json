@@ -37,6 +37,7 @@
           "ASC.Utilities": "1.0.0",
           "AutoMapper": "6.0.2",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "2.0.1",
+          "BundlerMinifier.Core": "3.2.449",
           "EPPlus.Core": "1.5.4",
           "ElCamino.AspNetCore.Identity.AzureTable": "5.1.0",
           "MailKit": "2.14.0",
@@ -398,6 +399,21 @@
         },
         "compile": {
           "lib/netstandard2.0/Azure.Data.Tables.dll": {}
+        }
+      },
+      "BundlerMinifier.Core/3.2.449": {
+        "dependencies": {
+          "NUglify": "1.5.14",
+          "Newtonsoft.Json": "13.0.1"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/dotnet-bundle.dll": {
+            "assemblyVersion": "3.2.449.0",
+            "fileVersion": "3.2.449.0"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp3.1/dotnet-bundle.dll": {}
         }
       },
       "ElCamino.AspNetCore.Identity.AzureTable/5.1.0": {
@@ -1986,6 +2002,17 @@
         },
         "compile": {
           "lib/netstandard2.0/NuGet.Versioning.dll": {}
+        }
+      },
+      "NUglify/1.5.14": {
+        "runtime": {
+          "lib/netstandard2.0/NUglify.dll": {
+            "assemblyVersion": "1.5.14.0",
+            "fileVersion": "1.5.14.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/NUglify.dll": {}
         }
       },
       "Portable.BouncyCastle/1.8.10": {
@@ -4993,6 +5020,13 @@
       "path": "azure.data.tables/12.2.0",
       "hashPath": "azure.data.tables.12.2.0.nupkg.sha512"
     },
+    "BundlerMinifier.Core/3.2.449": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-8ssF9o8PavO/YUh1rA/xz2qmNfm7FjC3UxkP7C8BMo2fvSodpWpeUB6/0ISRgq4U3T6+i7+WuAqlSLWHo3n/2w==",
+      "path": "bundlerminifier.core/3.2.449",
+      "hashPath": "bundlerminifier.core.3.2.449.nupkg.sha512"
+    },
     "ElCamino.AspNetCore.Identity.AzureTable/5.1.0": {
       "type": "package",
       "serviceable": true,
@@ -5860,6 +5894,13 @@
       "sha512": "sha512-XA59hPSbKdExu28TbONlD/BwOkKzjo4u2mkEJIP4wnDz9P65FdM34cVA+2/jztKrKyFmX8jpQW++xOp99mufjw==",
       "path": "nuget.versioning/6.0.0",
       "hashPath": "nuget.versioning.6.0.0.nupkg.sha512"
+    },
+    "NUglify/1.5.14": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-LosWK9I+Ncd235gxr7qNm+CaKeUr5FoOWPvPC0bRrf+McDf8/pcH2k2pyK8o2PuSImKss+jgXDzIkCvC2GSqRA==",
+      "path": "nuglify/1.5.14",
+      "hashPath": "nuglify.1.5.14.nupkg.sha512"
     },
     "Portable.BouncyCastle/1.8.10": {
       "type": "package",

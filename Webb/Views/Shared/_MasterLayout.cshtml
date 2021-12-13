@@ -10,31 +10,45 @@
     <title>configurationSettings.Value.ApplicationTitle</title>
     <!-- CSS  -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
-    <link href="~/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
-    <link href="~/css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
-    <link type="text/css" rel="stylesheet" href="~/css/materialize.min.css" media="screen,projection" />
+    <environment names="Development">
+        <link href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
+        <link href="~/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+        <link href="~/css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+        <link type="text/css" rel="stylesheet" href="~/css/materialize.min.css" media="screen,projection" />
+    </environment>
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <environment names="Staging,Production">
+        <link href="~/css/site.css" type="text/css" rel="stylesheet"
+              media="screen,projection" />
+    </environment>
 </head>
 <body>
-
+    <!-- Render Body -->
     @RenderBody()
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="~/js/materialize.js"></script>
-    <script type="text/javascript" src="~/js/materialize.min.js"></script>
+    <!-- JS Files -->
+    <environment names="Development">
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="~/js/materialize.js"></script>
+        <script type="text/javascript" src="~/js/materialize.min.js"></script>
 
-    <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+        <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
 
-    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
-    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+        <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+        <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
 
-    
-    <script src="~/js/init.js"></script>
-    @*<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.0/jquery.validate.min.js"></script>*@
+
+        <script src="~/js/init.js"></script>
+    </environment>
+    <environment names="Staging,Production">
+        <script src="~/js/jqueryBundle.min.js"></script>
+        <script src="~/js/libraryBundle.min.js"></script>
+        <script src="~/js/appBundle.min.js"></script>
+    </environment>
+        @*<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.0/jquery.validate.min.js"></script>*@
 </body>
 @RenderSection("Scripts", required: false)
 </html>

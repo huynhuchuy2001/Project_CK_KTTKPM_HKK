@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "DQOhR58sbc5nq8qkvbmQu7hafly+vR8X6F7TV3Pz06x+Ox5I8VB9aZtG66Yrus5aSvdzD/NrbgEpruOXBm8sZg==",
+  "dgSpecHash": "UwYTKnZTWDR+8ni+UALitt6BDNPyy9VWBln6+zkY4bsbw3z7FqROZMT7EY6tkAnYFh6RQMosYe9mO82PTC1CDQ==",
   "success": true,
   "projectFilePath": "F:\\TaiLieu\\HUYNHDUCHUY-PC\\HKI_Nam3\\KTTKPM\\Project_CK_PTTKPM_HKK\\Webb\\Webb.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "C:\\Users\\ACER\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\2.0.1\\automapper.extensions.microsoft.dependencyinjection.2.0.1.nupkg.sha512",
     "C:\\Users\\ACER\\.nuget\\packages\\azure.core\\1.19.0\\azure.core.1.19.0.nupkg.sha512",
     "C:\\Users\\ACER\\.nuget\\packages\\azure.data.tables\\12.2.0\\azure.data.tables.12.2.0.nupkg.sha512",
+    "C:\\Users\\ACER\\.nuget\\packages\\bundlerminifier.core\\3.2.449\\bundlerminifier.core.3.2.449.nupkg.sha512",
     "C:\\Users\\ACER\\.nuget\\packages\\elcamino.aspnetcore.identity.azuretable\\5.1.0\\elcamino.aspnetcore.identity.azuretable.5.1.0.nupkg.sha512",
     "C:\\Users\\ACER\\.nuget\\packages\\elcamino.aspnetcore.identity.azuretable.model\\5.1.0\\elcamino.aspnetcore.identity.azuretable.model.5.1.0.nupkg.sha512",
     "C:\\Users\\ACER\\.nuget\\packages\\epplus.core\\1.5.4\\epplus.core.1.5.4.nupkg.sha512",
@@ -132,6 +133,7 @@
     "C:\\Users\\ACER\\.nuget\\packages\\nuget.packaging\\6.0.0\\nuget.packaging.6.0.0.nupkg.sha512",
     "C:\\Users\\ACER\\.nuget\\packages\\nuget.protocol\\6.0.0\\nuget.protocol.6.0.0.nupkg.sha512",
     "C:\\Users\\ACER\\.nuget\\packages\\nuget.versioning\\6.0.0\\nuget.versioning.6.0.0.nupkg.sha512",
+    "C:\\Users\\ACER\\.nuget\\packages\\nuglify\\1.5.14\\nuglify.1.5.14.nupkg.sha512",
     "C:\\Users\\ACER\\.nuget\\packages\\portable.bouncycastle\\1.8.10\\portable.bouncycastle.1.8.10.nupkg.sha512",
     "C:\\Users\\ACER\\.nuget\\packages\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\ACER\\.nuget\\packages\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",

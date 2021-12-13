@@ -1803,3 +1803,8 @@ F:\TaiLieu\HUYNHDUCHUY-PC\HKI_Nam3\KTTKPM\Project_CK_PTTKPM_HKK\Webb\obj\Debug\n
 F:\TaiLieu\HUYNHDUCHUY-PC\HKI_Nam3\KTTKPM\Project_CK_PTTKPM_HKK\Webb\obj\Debug\netcoreapp3.1\Webb.dll
 F:\TaiLieu\HUYNHDUCHUY-PC\HKI_Nam3\KTTKPM\Project_CK_PTTKPM_HKK\Webb\obj\Debug\netcoreapp3.1\Webb.pdb
 F:\TaiLieu\HUYNHDUCHUY-PC\HKI_Nam3\KTTKPM\Project_CK_PTTKPM_HKK\Webb\obj\Debug\netcoreapp3.1\Webb.genruntimeconfig.cache
+F:\TaiLieu\HUYNHDUCHUY-PC\HKI_Nam3\KTTKPM\Project_CK_PTTKPM_HKK\Webb\bin\Debug\netcoreapp3.1\bundleconfig.json
+F:\TaiLieu\HUYNHDUCHUY-PC\HKI_Nam3\KTTKPM\Project_CK_PTTKPM_HKK\Webb\bin\Debug\netcoreapp3.1\dotnet-bundle.dll
+F:\TaiLieu\HUYNHDUCHUY-PC\HKI_Nam3\KTTKPM\Project_CK_PTTKPM_HKK\Webb\bin\Debug\netcoreapp3.1\NUglify.dll
+F:\TaiLieu\HUYNHDUCHUY-PC\HKI_Nam3\KTTKPM\Project_CK_PTTKPM_HKK\Webb\bin\Debug\netcoreapp3.1\Nuget.config
+F:\TaiLieu\HUYNHDUCHUY-PC\HKI_Nam3\KTTKPM\Project_CK_PTTKPM_HKK\Webb\bin\Debug\netcoreapp3.1\bower.json

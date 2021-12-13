@@ -78,9 +78,9 @@
                     <input asp-for="Registration.Email" id="Input_Registration_Email" />
                     <label asp-for="Registration.Email"></label>
                 </div>
-                
-               
-                
+
+
+
                 <div class="input-field col s4">
                     <div class="switch">
                         <label>
@@ -93,7 +93,7 @@
                 <div class="input-field col s4 right-align">
                     <button class="btn waves-effect waves-light btnSubmit" type="submit"
                             name="action">
-                        Create
+                        Save
                         <i class="material-icons right">send</i>
                     </button>
                     <button class="btn waves-effect waves-light reset red lighten-1"
@@ -111,6 +111,7 @@
     <script>
 
         $(document).ready(function () {
+            $('.btnSubmit').attr('disabled', 'disabled');
             // Initialize DataTable to show list of Engineers
             var table = $('#tblServiceEngineers').DataTable({
                 'pageLength': 3,
@@ -127,8 +128,6 @@
             $(document).on("click", ".reset", function () {
                 $('#fromUser')[0].reset();
                 $('#Input_Registration_Email').removeAttr('disabled');
-                $('.btnSubmit').text('Create');
-                $('#Registration_IsEdit').val('False');
             });
             // This is required to disable Email filed on Server-side model validation failure.
             if ($('#Registration_IsEdit').val() === 'True') {
@@ -138,7 +137,7 @@
             $(document).on('click', '.edit', function () {
 
                 var user = $('#tblServiceEngineers').DataTable().row($(this).parents('tr')).data();
-             
+
                 $('#Registration_IsEdit').val('True');
                 $('#Input_Registration_Email').val(user[0]);
                 $('#Input_Registration_Email').attr('disabled', 'disabled');

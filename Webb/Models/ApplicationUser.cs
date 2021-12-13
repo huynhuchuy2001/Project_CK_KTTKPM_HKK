@@ -9,5 +9,6 @@ namespace Lap1.Models
 {
     public class ApplicationUser : IdentityUser
     {
+        public object Claims { get; internal set; }
     }
 }
