@@ -23,6 +23,15 @@
     <script src="~/js/init.js"></script>
     <script src="~/js/materialize.js"></script>
     <script src="~/js/materialize.min.js"></script>
-    @RenderSection("Scripts", required: false)
+        @RenderSection("Scripts", required: false)
+        <script>
+            $(document).ready(function () {
+                $('select').formSelect();
+                $("select[required]").css({
+                    display: "block", position: 'absolute',
+                    visibility: 'hidden'
+                })
+            });
+        </script>
 </body>
 </html>

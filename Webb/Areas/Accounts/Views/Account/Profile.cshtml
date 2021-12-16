@@ -33,7 +33,7 @@
                         Save
                         <i class="material-icons right">send</i>
                     </button>
-                  
+
                 </div>
                 <div class="row col s12 right-align" asp-validation-summary="All"></div>
             </form>
@@ -41,5 +41,16 @@
         <div class="row"></div>
     </div>
 </div>
+@section Scripts{
+    <script>
+        $(document).ready(function () {
+            $('select').formSelect();
+            $("select[required]").css({
+                display: "block", position: 'absolute',
+                visibility: 'hidden'
+            })
+        });
+    </script>
+}
 
 

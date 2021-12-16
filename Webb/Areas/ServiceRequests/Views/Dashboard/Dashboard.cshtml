@@ -1,6 +1,8 @@
 ﻿@model Webb.Areas.ServiceRequests.Models.DashboardViewModel
 @using ASC.Models.BaseTypes
 @using Microsoft.AspNetCore.Http
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IHtmlLocalizer<SharedResources> SharedLocalizer
 @inject IHttpContextAccessor UserHttpContext
 @{ ViewData["Title"] = "Dashboard";
     Layout = "~/Views/Shared/_SecureLayout.cshtml";
@@ -8,7 +10,7 @@
 }
 <div class="row"></div>
 @await Html.PartialAsync("_ServiceRequestGrid", Model.ServiceRequests, new ViewDataDictionary(ViewData) {
- { "SectionName", "Service Requests" },
+ { "SectionName", SharedLocalizer["SectionHeader_ServiceRequests_Text"] },
  { "Id", "tblServiceRequests" },
  { "IsAudit", false }
 })
@@ -31,23 +33,24 @@ UserHttpContext.HttpContext.User.IsInRole(Roles.Engineer.ToString()))
                 @if (Model.ActiveServiceRequests.Any())
                 {
                     @foreach (var activeServiceRequest in Model.ActiveServiceRequests)
-                    { 
+                    {
                         <li class="collection-item">
                             <div>
                                 <span class="new badge" data-badgecaption="">
-                                    @activeServiceRequest.Value</span>@activeServiceRequest.Key
-                        </div>
-                    </li>
-                }
+                                    @activeServiceRequest.Value
+                                </span>@activeServiceRequest.Key
+                            </div>
+                        </li>
+                    }
                 }
                 else
                 {
-                <li class="collection-item">
-                    <div class="card-panel teal lighten-2 white-text">
-                        No Activer Service
-                        Requests.
-                    </div>
-                </li>
+                    <li class="collection-item">
+                        <div class="card-panel teal lighten-2 white-text">
+                            No Activer Service
+                            Requests.
+                        </div>
+                    </li>
                 }
             </ul>
         </div>
@@ -81,6 +84,11 @@ UserHttpContext.HttpContext.User.IsInRole(Roles.Engineer.ToString()))
             // Set Styles for DataTable and Number of Records to be displayed dropdown
             $('.tblServiceRequests').css("width", "100%");
             $('select[name$="ServiceRequests_length"]').formSelect();
+            $('select').formSelect();
+            $("select[required]").css({
+                display: "block", position: 'absolute',
+                visibility: 'hidden'
+            })
             // On click of View icon, redirect to Service Request Details View based on RowKey
             $(document).on('click', '.view', function () {
              var tableId = '#' + $(this).parents('table').attr('id');

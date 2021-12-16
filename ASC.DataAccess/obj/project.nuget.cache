@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WY9jq2eiFKI5uGYdq6554WEr37m04Pz+yBGNQVKzqe+G1kQDqHMt3yV5/DM3u0lSYXh+vivUTcSrL1Rc4j6LFw==",
+  "dgSpecHash": "04OM6okVOsK38yhmfe+dtyEOz5IT/KlU+vwx+e8yLfm5nI9ZAcfI638Xx4l4rgw0Jerov/pKIygJlR9dsJZDQQ==",
   "success": true,
-  "projectFilePath": "F:\\TaiLieu\\HUYNHDUCHUY-PC\\HKI_Nam3\\KTTKPM\\Project_CK_PTTKPM_HKK\\ASC.DataAccess\\ASC.DataAccess.csproj",
+  "projectFilePath": "F:\\TaiLieu\\HUYNHDUCHUY-PC\\HKI_Nam3\\KTTKPM\\New folder\\ASC.DataAccess\\ASC.DataAccess.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ACER\\.nuget\\packages\\microsoft.aspnetcore.antiforgery\\2.2.0\\microsoft.aspnetcore.antiforgery.2.2.0.nupkg.sha512",
     "C:\\Users\\ACER\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",

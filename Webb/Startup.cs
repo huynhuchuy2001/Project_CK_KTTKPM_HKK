@@ -12,15 +12,19 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Localization;
+using Microsoft.AspNetCore.Mvc.Razor;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.Extensions.FileProviders;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Options;
+using Newtonsoft.Json.Serialization;
 using NuGet.Protocol.Core.Types;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Reflection;
 using System.Threading.Tasks;
@@ -97,9 +101,36 @@ namespace Webb
             {
                 options.FileProviders.Add(embeddedFileProvider);
             });
+            services
+                .AddMvc()
+                .AddNewtonsoftJson(options => options.SerializerSettings.ContractResolver = new DefaultContractResolver())
+                .AddViewLocalization(LanguageViewLocationExpanderFormat.Suffix, options => { options.ResourcesPath = "Resources"; })
+                .AddDataAnnotationsLocalization(options =>
+                {
+                    options.DataAnnotationLocalizerProvider = (type, factory) =>
+                factory.Create(typeof(SharedResources));
+                });
+            services.Configure<RequestLocalizationOptions>(
+            opts =>
+            {
+                var supportedCultures = new List<CultureInfo>
+                {
+                    new CultureInfo("en-US"),
+                    new CultureInfo("es-MX")
+                };
+
+                opts.DefaultRequestCulture = new RequestCulture("en-US");
+                // Formatting numbers, dates, etc.
+                opts.SupportedCultures = supportedCultures;
+                // UI strings that we have localized.
+                opts.SupportedUICultures = supportedCultures;
+            });
             services.AddScoped<IMasterDataCacheOperations, MasterDataCacheOperations>();
             services.AddSingleton<INavigationCacheOperations, NavigationCacheOperations>();
             services.AddScoped<IServiceRequestOperations, ServiceRequestOperations>();
+            services.AddLocalization(options => options.ResourcesPath = "Resources");
+            services.AddTransient<IEmailSender, AuthMessageSender>();
+            services.AddTransient<ISmsSender, AuthMessageSender>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -126,7 +157,9 @@ namespace Webb
             app.UseRouting();
 
             app.UseAuthorization();
-        
+            var options = app.ApplicationServices.GetService<IOptions<RequestLocalizationOptions>>();
+            app.UseRequestLocalization(options.Value);
+
             app.UseSession();
             app.UseAuthentication();
             app.UseEndpoints(endpoints =>

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ed4R1dSRNyYnb5GpnTzC/coC6etushrv7LN3rpVQ0d8xSiJnT3NizOB/JR6pCtHfzRVMoEjwPJchqOQ+xS/MvA==",
+  "dgSpecHash": "djKGlXA7P3McrPDbAI+KyDb9LLSe5VoF3oXonAzWKQ+MPtuNVdp8Liy4Gxm2YCpCHvkDW6lzEgY7VZI8AqB6ew==",
   "success": true,
-  "projectFilePath": "F:\\TaiLieu\\HUYNHDUCHUY-PC\\HKI_Nam3\\KTTKPM\\Project_CK_PTTKPM_HKK\\ASC.Models\\ASC.Models.csproj",
+  "projectFilePath": "F:\\TaiLieu\\HUYNHDUCHUY-PC\\HKI_Nam3\\KTTKPM\\New folder\\ASC.Models\\ASC.Models.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ACER\\.nuget\\packages\\microsoft.csharp\\4.3.0\\microsoft.csharp.4.3.0.nupkg.sha512",
     "C:\\Users\\ACER\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",

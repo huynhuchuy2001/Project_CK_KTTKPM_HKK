@@ -192,6 +192,9 @@
                 Materialize
             </a>
         </div>
+        <div class="col s4">
+            @await Html.PartialAsync("_SelectCulture")
+        </div>
     </div>
 </footer>
 <form class="hide" method="post" id="logout_form" asp-area="Identity" asp-page="/Account/Logout">

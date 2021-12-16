@@ -26,3 +26,13 @@ F:\TaiLieu\HUYNHDUCHUY-PC\HKI_Nam3\KTTKPM\Project_CK_KTTKPM\ASC.Utilities\obj\De
 F:\TaiLieu\HUYNHDUCHUY-PC\HKI_Nam3\KTTKPM\Project_CK_KTTKPM\ASC.Utilities\obj\Debug\netcoreapp3.1\ASC.Utilities.csproj.CoreCompileInputs.cache
 F:\TaiLieu\HUYNHDUCHUY-PC\HKI_Nam3\KTTKPM\Project_CK_KTTKPM\ASC.Utilities\obj\Debug\netcoreapp3.1\ASC.Utilities.dll
 F:\TaiLieu\HUYNHDUCHUY-PC\HKI_Nam3\KTTKPM\Project_CK_KTTKPM\ASC.Utilities\obj\Debug\netcoreapp3.1\ASC.Utilities.pdb
+F:\TaiLieu\HUYNHDUCHUY-PC\HKI_Nam3\KTTKPM\New folder\ASC.Utilities\bin\Debug\netcoreapp3.1\ASC.Utilities.deps.json
+F:\TaiLieu\HUYNHDUCHUY-PC\HKI_Nam3\KTTKPM\New folder\ASC.Utilities\bin\Debug\netcoreapp3.1\ASC.Utilities.dll
+F:\TaiLieu\HUYNHDUCHUY-PC\HKI_Nam3\KTTKPM\New folder\ASC.Utilities\bin\Debug\netcoreapp3.1\ASC.Utilities.pdb
+F:\TaiLieu\HUYNHDUCHUY-PC\HKI_Nam3\KTTKPM\New folder\ASC.Utilities\obj\Debug\netcoreapp3.1\ASC.Utilities.csproj.AssemblyReference.cache
+F:\TaiLieu\HUYNHDUCHUY-PC\HKI_Nam3\KTTKPM\New folder\ASC.Utilities\obj\Debug\netcoreapp3.1\ASC.Utilities.GeneratedMSBuildEditorConfig.editorconfig
+F:\TaiLieu\HUYNHDUCHUY-PC\HKI_Nam3\KTTKPM\New folder\ASC.Utilities\obj\Debug\netcoreapp3.1\ASC.Utilities.AssemblyInfoInputs.cache
+F:\TaiLieu\HUYNHDUCHUY-PC\HKI_Nam3\KTTKPM\New folder\ASC.Utilities\obj\Debug\netcoreapp3.1\ASC.Utilities.AssemblyInfo.cs
+F:\TaiLieu\HUYNHDUCHUY-PC\HKI_Nam3\KTTKPM\New folder\ASC.Utilities\obj\Debug\netcoreapp3.1\ASC.Utilities.csproj.CoreCompileInputs.cache
+F:\TaiLieu\HUYNHDUCHUY-PC\HKI_Nam3\KTTKPM\New folder\ASC.Utilities\obj\Debug\netcoreapp3.1\ASC.Utilities.dll
+F:\TaiLieu\HUYNHDUCHUY-PC\HKI_Nam3\KTTKPM\New folder\ASC.Utilities\obj\Debug\netcoreapp3.1\ASC.Utilities.pdb

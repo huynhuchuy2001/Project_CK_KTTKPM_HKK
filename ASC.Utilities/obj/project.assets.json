@@ -7646,11 +7646,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\TaiLieu\\HUYNHDUCHUY-PC\\HKI_Nam3\\KTTKPM\\Project_CK_PTTKPM_HKK\\ASC.Utilities\\ASC.Utilities.csproj",
+      "projectUniqueName": "F:\\TaiLieu\\HUYNHDUCHUY-PC\\HKI_Nam3\\KTTKPM\\New folder\\ASC.Utilities\\ASC.Utilities.csproj",
       "projectName": "ASC.Utilities",
-      "projectPath": "F:\\TaiLieu\\HUYNHDUCHUY-PC\\HKI_Nam3\\KTTKPM\\Project_CK_PTTKPM_HKK\\ASC.Utilities\\ASC.Utilities.csproj",
+      "projectPath": "F:\\TaiLieu\\HUYNHDUCHUY-PC\\HKI_Nam3\\KTTKPM\\New folder\\ASC.Utilities\\ASC.Utilities.csproj",
       "packagesPath": "C:\\Users\\ACER\\.nuget\\packages\\",
-      "outputPath": "F:\\TaiLieu\\HUYNHDUCHUY-PC\\HKI_Nam3\\KTTKPM\\Project_CK_PTTKPM_HKK\\ASC.Utilities\\obj\\",
+      "outputPath": "F:\\TaiLieu\\HUYNHDUCHUY-PC\\HKI_Nam3\\KTTKPM\\New folder\\ASC.Utilities\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ACER\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Tozws8QvRLDHTvv8hLeAYIZEPCkWrZGlyHEI51wR21fS3wIZA/RMfq9MR77JMSGTp36vXyUG6bWBOVMoheql8g==",
+  "dgSpecHash": "4HBwuNcIKxps2ZT01NVZ43MWjdszZpHrs8fzS/46FdnsrKbxGqU5xVXF/G8I7FY9NIw7rU/kNWPdD08LvYVMNA==",
   "success": true,
-  "projectFilePath": "F:\\TaiLieu\\HUYNHDUCHUY-PC\\HKI_Nam3\\KTTKPM\\Project_CK_PTTKPM_HKK\\ASC.Tests\\ASC.Tests.csproj",
+  "projectFilePath": "F:\\TaiLieu\\HUYNHDUCHUY-PC\\HKI_Nam3\\KTTKPM\\New folder\\ASC.Tests\\ASC.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ACER\\.nuget\\packages\\castle.core\\4.4.0\\castle.core.4.4.0.nupkg.sha512",
     "C:\\Users\\ACER\\.nuget\\packages\\coverlet.collector\\1.3.0\\coverlet.collector.1.3.0.nupkg.sha512",

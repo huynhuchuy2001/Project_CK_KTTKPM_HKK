@@ -127,6 +127,7 @@
                         // Set Styles for DataTable and Number of Records to be displayed in dropdown
                         $('#tblMasterKeys').css("width", "100%");
                         $('select[name="tblMasterKeys_length"]').formSelect();
+                        $('select').formSelect();
                         // Get the column API object
                         var partitionKeyColumn = table.column(1);
                         partitionKeyColumn.visible(false);
